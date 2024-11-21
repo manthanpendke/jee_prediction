@@ -18,7 +18,7 @@ from sklearn.metrics import accuracy_score, classification_report, mean_absolute
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load the data
-data = pd.read_csv('/content/2022.csv')  # Adjust to your file path
+data = pd.read_csv('2022.csv')  # Adjust to your file path
 
 # Select relevant columns
 data = data[["Institute", "Academic Program Name", "Seat Type", "Opening Rank", "Closing Rank", "Round"]]
@@ -172,7 +172,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load the data
-data = pd.read_csv('/content/2022.csv')  # Adjust to your file path
+data = pd.read_csv('2022.csv')  # Adjust to your file path
 
 # Select relevant columns
 data = data[["Institute", "Academic Program Name", "Seat Type", "Opening Rank", "Closing Rank", "Round"]]
@@ -252,7 +252,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
 
 # Load the dataset
-data = pd.read_csv('/content/2022.csv')
+data = pd.read_csv('2022.csv')
 
 # Replace 'OPEN' with 0 in Opening and Closing Rank and convert to numeric
 data["Opening Rank"] = pd.to_numeric(data["Opening Rank"].replace("OPEN", 0), errors="coerce")
