@@ -65,8 +65,8 @@ def load_data_and_models():
         return None
 
 def main():
-    st.title("ML Model Deployment App")
-    st.write("Predict the Institute, Academic Program, and Round based on your input data.")
+    st.title("COLLEGE PREDICTION SYSTEM")
+    st.write("ENTER YOUR SEAT TYPE AND RANK")
 
     # Load data and models
     result = load_data_and_models()
